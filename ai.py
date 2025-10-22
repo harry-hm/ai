@@ -139,11 +139,11 @@ d = [[0,10,15,20], [10,0,35,25], [15,35,0,30], [20,25,30,0]]
 best = 999  
 path = []  
 for trip in permutations([1,2,3]):  
-a, b, c = trip  
-cost = d[0][a] + d[a][b] + d[b][c] + d[c][0]  
-if cost < best:  
-best = cost  
-path = trip  
+    a, b, c = trip  
+    cost = d[0][a] + d[a][b] + d[b][c] + d[c][0]  
+    if cost < best:  
+        best = cost  
+        path = trip  
 print("Cost:", best, "Path:", path)  
 
 #7. Tower of Hanoi
